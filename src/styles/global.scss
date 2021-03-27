@@ -1,0 +1,14 @@
+// VARS & FONTS
+@import "./partials/_fonts";
+@import "./partials/_variables";
+
+// RESET CSS
+@import "../../node_modules/reset-css/sass/_reset";
+
+// PARTIALS
+@import "./partials/_main";
+@import "./partials/_header";
+@import "./partials/_loader";
+
+// PAGES
+@import "./partials/_index";
