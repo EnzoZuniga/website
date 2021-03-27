@@ -7,11 +7,11 @@ const targetAddress = new URL(
 
 module.exports = {
   siteMetadata: {
-    author: "@elinoï",
+    author: "mark x enzo",
     description:
-      "Découvrez les projets et la culture de 50 startups innovantes sélectionnées par elinoï.",
+      "website",
     siteUrl: targetAddress.href.slice(0, -1),
-    title: "50 startups où postuler en 2021",
+    title: "Hostel",
   },
   plugins: [
     {
@@ -36,42 +36,6 @@ module.exports = {
             fix: true,
             cache: true,
           },
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-hotjar",
-      options: {
-        id: process.env.REACT_APP_HOTJAR_ID,
-        sv: 6,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-gtag",
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
-        ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-          // Setting this parameter is also optional
-          respectDNT: true,
-        },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-s3",
-      options: {
-        bucketName: process.env.TARGET_BUCKET_NAME || "fake-bucket",
-        region: process.env.AWS_REGION,
-        protocol: targetAddress.protocol.slice(0, -1),
-        hostname: targetAddress.hostname,
-        acl: null,
-        params: {
-          // In case you want to add any custom content types: https://github.com/jariz/gatsby-plugin-s3/blob/master/recipes/custom-content-type.md
         },
       },
     },
