@@ -31,10 +31,10 @@ const IndexPage: React.FC<{ location: Location }> = ({
       <SEO
         meta={{
           "og:image":
-            "https://elinoi-uploads.s3.eu-west-3.amazonaws.com/50-startups-2021-social.jpeg",//changer c'est l'image de partage
+            "",//changer c'est l'image de partage
           "og:image:height": "1030",
           "og:image:secure_url":
-            "https://elinoi-uploads.s3.eu-west-3.amazonaws.com/50-startups-2021-social.jpeg",//idem
+            "",//idem
           "og:image:width": "1280",
           "og:url": location.href,
         }}
