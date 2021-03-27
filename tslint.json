@@ -1,8 +1,30 @@
 {
   "extends": ["tslint:recommended"],
   "rules": {
-    "indent": [true, "spaces", 2],
-    "variable-name": [true, "ban-keywords", "allow-leading-userscore"]
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "no-consecutive-blank-lines": true,
+    "no-trailing-whitespace": true,
+    "interface-name": true,
+    "class-name": true,
+    "arrow-return-shorthand": true,
+    "no-duplicate-imports": true,
+    "max-line-length": [
+      true,
+      120
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "allow-leading-underscore"
+    ]
   },
   "linterOptions": {
     "exclude": [
